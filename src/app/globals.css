@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fafafa;
-  --foreground: #09090b;
-  --muted: #e8ecf0;
-  --muted-foreground: #475569;
-  --border: #e4e4e7;
-  --card: #ffffff;
-  --accent: #2563eb;
-  --ring: #18181b;
+  --background: #f3eadf;
+  --foreground: #1c3d32;
+  --muted: #e7dccb;
+  --muted-foreground: #345c4c;
+  --border: #cbbda8;
+  --card: #f7f2e8;
+  --accent: #a32e24;
+  --ring: #a32e24;
 }
 
 @theme inline {
@@ -20,8 +20,8 @@
   --color-card: var(--card);
   --color-accent: var(--accent);
   --color-ring: var(--ring);
-  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-heading), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-body), "Iowan Old Style", Palatino, serif;
+  --font-display: var(--font-heading), "Iowan Old Style", Palatino, serif;
 }
 
 html {
@@ -37,13 +37,15 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  font-family: var(--font-body), "Iowan Old Style", Palatino, serif;
+  font-size: 1rem;
+  line-height: 1.65;
   text-rendering: optimizeLegibility;
 }
 
 ::selection {
-  background: #18181b;
-  color: #ffffff;
+  background: var(--accent);
+  color: var(--background);
 }
 
 @layer base {

@@ -1,5 +1,3 @@
-export type WorkMark = "signal" | "orbit" | "horizon" | "plan" | "shelves";
-
 export type Work = {
   slug: string;
   title: string;
@@ -11,7 +9,6 @@ export type Work = {
   href?: string;
   /** Set after adding a file in public/work, e.g. "/work/sahana.jpg". */
   image?: string;
-  mark: WorkMark;
 };
 
 export type Education = {
@@ -32,8 +29,43 @@ export type Award = {
   title: string;
   year: string;
   detail: string;
-  icon: "medal" | "certificate";
 };
+
+export type Step = {
+  period: string;
+  title: string;
+  org: string;
+  note: string;
+  current?: boolean;
+};
+
+export const path: Step[] = [
+  {
+    period: "Jan 2024 — Sep 2025",
+    title: "Intern",
+    org: "Loopcraft",
+    note: "The first stretch at Loopcraft, before the frontend role on the same studio’s projects.",
+  },
+  {
+    period: "Feb 2025 — Jun 2026",
+    title: "Frontend developer",
+    org: "Loopcraft",
+    note: "React, Next.js, TypeScript, and Tailwind across more than fifteen projects, with Payload for the content.",
+  },
+  {
+    period: "Jun 2026 — Aug 2026",
+    title: "Full-stack developer",
+    org: "SME Digital",
+    note: "React Native and Expo for the product, with Strapi and PostgreSQL behind it.",
+  },
+  {
+    period: "Aug 2026 — present",
+    title: "Full-stack developer",
+    org: "MindCo",
+    note: "Government sites and content systems. TanStack Start, Hono, PostgreSQL, Docker, and Payload.",
+    current: true,
+  },
+];
 
 export const profile = {
   name: "Mohamed Ajmal Ahmed",
@@ -63,7 +95,6 @@ export const works: Work[] = [
     context: "Maldives National University",
     period: "Feb 2025 — Present",
     stack: ["React", "Laravel", "PostgreSQL", "Tailwind CSS"],
-    mark: "signal",
   },
   {
     slug: "space-explorer",
@@ -75,7 +106,6 @@ export const works: Work[] = [
     period: "Aug 2025 — Oct 2025",
     stack: ["Next.js", "React", "TypeScript", "Three.js"],
     href: "https://space-explorerr.vercel.app/",
-    mark: "orbit",
   },
   {
     slug: "from-maldives",
@@ -86,7 +116,6 @@ export const works: Work[] = [
     context: "Loopcraft",
     period: "Aug 2025 — Sep 2025",
     stack: ["Next.js", "React", "Payload CMS"],
-    mark: "horizon",
   },
   {
     slug: "igmh",
@@ -97,7 +126,6 @@ export const works: Work[] = [
     context: "Loopcraft",
     period: "Apr 2025 — Jun 2025",
     stack: ["Next.js", "React", "Payload CMS"],
-    mark: "plan",
   },
   {
     slug: "storefront",
@@ -108,7 +136,6 @@ export const works: Work[] = [
     context: "Self-made",
     period: "May 2024 — May 2025",
     stack: ["Storefront", "Admin dashboard", "Inventory"],
-    mark: "shelves",
   },
 ];
 
@@ -151,20 +178,17 @@ export const awards: Award[] = [
     year: "2025",
     detail:
       "First place for a cube-collector robot. I led the mechanical design and the control logic.",
-    icon: "medal",
   },
   {
     mark: "CCNA",
     title: "Cisco networking",
     year: "Associate",
     detail: "Routing, switching, IP addressing, and the basics of network security.",
-    icon: "certificate",
   },
   {
     mark: "CCNA 2",
     title: "Routing and WAN",
     year: "Associate",
     detail: "VLANs, RIP, OSPF, access lists, wireless, and a secure multi-site WAN.",
-    icon: "certificate",
   },
 ];

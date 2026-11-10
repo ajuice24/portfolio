@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
-import { Archivo, Space_Grotesk } from "next/font/google";
+import { Cormorant_Garamond, Libre_Baskerville } from "next/font/google";
 import "./globals.css";
 
-const archivo = Archivo({
+const baskerville = Libre_Baskerville({
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
+  weight: ["400", "700"],
   variable: "--font-body",
   display: "swap",
 });
 
-const grotesk = Space_Grotesk({
+const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
+  weight: ["500", "600", "700"],
   variable: "--font-heading",
   display: "swap",
 });
@@ -19,15 +19,12 @@ const grotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: "Mohamed Ajmal Ahmed — Full-stack developer",
   description:
-    "Portfolio of Mohamed Ajmal Ahmed, a full-stack developer in Hulhumale. Selected work, education, skills, and awards.",
+    "Portfolio of Mohamed Ajmal Ahmed, a full-stack developer in Hulhumale. The path from Loopcraft to MindCo, selected work, education, skills, and awards.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="en"
-      className={`${archivo.variable} ${grotesk.variable} h-full antialiased`}
-    >
+    <html lang="en" className={`${baskerville.variable} ${cormorant.variable} h-full antialiased`}>
       <body className="min-h-full bg-background text-foreground">{children}</body>
     </html>
   );
