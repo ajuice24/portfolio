@@ -29,6 +29,12 @@
       "choice": "A short about statement sits on the oat ground between the title card and the career coverflow. Hand-drawn marks and paper chips pick out the words, in forest ink with a tomato highlight.",
       "type": "Cormorant for the statement, Baskerville for the sections below",
       "ratio": "Oat page, forest ink, tomato only on the highlight"
+    },
+    {
+      "date": "2026-11-15",
+      "choice": "The career path is a pinned horizontal timeline on the oat ground. The portrait leads, tomato marks the rail, and each stop carries the place mark beside the date.",
+      "type": "Cormorant for the timeline titles, Baskerville for the notes",
+      "ratio": "Oat field, forest type, tomato rail"
     }
   ]
 }

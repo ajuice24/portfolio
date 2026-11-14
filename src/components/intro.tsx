@@ -11,7 +11,7 @@ import {
 export function Intro() {
   return (
     <section aria-label="About" className="px-6 pt-8 pb-6 md:px-10 md:pt-14 md:pb-8">
-      <p className="mx-auto max-w-3xl text-center font-display text-[clamp(1.45rem,3.1vw,2.35rem)] leading-[1.55] text-balance text-foreground">
+      <p className="mx-auto max-w-4xl text-center font-display text-[clamp(1.825rem,calc(3.1vw+6px),2.725rem)] leading-[1.55] text-balance text-foreground">
         I&apos;m a{" "}
         <AnnotatedTextChip icon={<Code2 />}>Full-Stack Developer,</AnnotatedTextChip>{" "}
         passionate about turning{" "}
