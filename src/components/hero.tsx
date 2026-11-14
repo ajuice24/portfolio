@@ -17,6 +17,8 @@ export function Hero() {
         meta=""
         scene=""
         preset="paper"
+        hud={false}
+        palette={{ stage: "#f3eadf" }}
         label={`${profile.name}, ${profile.role}`}
       />
     </section>

@@ -116,7 +116,7 @@ const PRESETS: AnimatorPresetMap = {
     skin0: "#d98a5e", skin1: "#b4673f", skin2: "#7a3f22", nail: "#efb391", cuff: "#e2a12c",
   },
   paper: {
-    stage: "#efe7da", ink: "#1f1a16", muted: "#8a7d6c", rough: "#1aa6d9", ghost: "#ef4f7e",
+    stage: "#f3eadf", ink: "#1f1a16", muted: "#8a7d6c", rough: "#1aa6d9", ghost: "#ef4f7e",
     word0: "#2a1f1a", word1: "#3b2c24", word2: "#151110",
     sleeve0: "#4a6cf0", sleeve1: "#2f4fd0", sleeve2: "#1b2c86", pattern: "#a9c2ff", speck: "#0b1340",
     skin0: "#f6b08c", skin1: "#e08e66", skin2: "#a85a3c", nail: "#ffd3bd", cuff: "#ec4b2f",
@@ -1152,8 +1152,8 @@ export default function AnimatorTitlePreloader({
           "--atp-cuff": colors.cuff,
           "--atp-display": displayFamily,
           "--atp-mono": monoFamily,
-          "--atp-vig": lightStage ? 0.16 : 0.55,
-          "--atp-grain": lightStage ? 0.5 : 0.09,
+          "--atp-vig": lightStage ? 0 : 0.55,
+          "--atp-grain": lightStage ? 0 : 0.09,
           "--atp-grain-blend": lightStage ? "multiply" : "screen",
           "--atp-peg": lightStage ? 0.1 : 0.42,
           "--atp-word-size": "calc(min(" + Math.round(1400 / Math.max(n, 6)) / 10 + "cqw, 21cqh) * " + fit.toFixed(3) + ")",
@@ -1247,12 +1247,6 @@ export default function AnimatorTitlePreloader({
               <rect width="100%" height="100%" filter={"url(#" + uid + "-grain)"} />
             </svg>
             <div className="atp-vignette" aria-hidden="true" />
-
-            <div className="atp-pegs" aria-hidden="true">
-              <span className="atp-peg" style={{ width: 30, height: 10 }} />
-              <span className="atp-peg" style={{ width: 13, height: 13 }} />
-              <span className="atp-peg" style={{ width: 30, height: 10 }} />
-            </div>
 
             {hud ? (
               <>
