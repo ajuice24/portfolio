@@ -8,8 +8,9 @@ const logos: Record<string, Pick<CoverflowSlide, "src" | "alt" | "imageClassName
     imageClassName: "object-contain p-[8%]",
   },
   "SME Digital": {
-    src: "/logos/sme-digital.jpg",
+    src: "/logos/sme-digital.png",
     alt: "SME Digital logo",
+    imageClassName: "object-contain p-[10%]",
   },
   MindCo: {
     src: "/logos/mindco.png",
@@ -36,20 +37,17 @@ export function CareerPath() {
   const current = path.findIndex((step) => step.current);
 
   return (
-    <section id="path" className="mx-auto w-full max-w-6xl px-6 py-20 md:px-10 md:py-28">
-      <h2 className="font-display text-4xl tracking-tight md:text-5xl">The path</h2>
-      <div className="mt-4">
-        <CoverflowCarousel
-          slides={slides}
-          initialIndex={current === -1 ? 0 : current}
-          showCaption
-          showNavigation
-          showPagination
-          label="Career path"
-          cardWidth="clamp(180px, 34vw, 300px)"
-          cardClassName="bg-card"
-        />
-      </div>
+    <section id="path" className="w-full px-3 py-20 sm:px-5 md:py-28">
+      <CoverflowCarousel
+        slides={slides}
+        initialIndex={current === -1 ? 0 : current}
+        showCaption
+        showNavigation
+        showPagination
+        label="Career path"
+        cardWidth="clamp(240px, 46vw, 440px)"
+        cardClassName="bg-card"
+      />
     </section>
   );
 }

@@ -9,6 +9,42 @@
   --card: #f7f2e8;
   --accent: #a32e24;
   --ring: #a32e24;
+  --highlight: color-mix(in oklch, #a32e24 26%, #f3eadf);
+  --chip: #e7dccb;
+  --destructive: #a32e24;
+  --destructive-subtle: color-mix(in oklch, #a32e24 12%, transparent);
+  --success: #1c3d32;
+  --success-subtle: color-mix(in oklch, #1c3d32 10%, transparent);
+  --warning: #8a5a2a;
+  --warning-subtle: color-mix(in oklch, #8a5a2a 12%, transparent);
+  --info: #345c4c;
+  --info-subtle: color-mix(in oklch, #345c4c 12%, transparent);
+  --sticker-edge: #fffdf8;
+  --sticker-ink: #1c3d32;
+  --sticker-shadow: color-mix(in oklch, #1c3d32 28%, transparent);
+  --destructive-icon: var(--destructive);
+  --success-icon: var(--success);
+  --warning-icon: var(--warning);
+  --info-icon: var(--info);
+}
+
+.dark {
+  --highlight: color-mix(in oklch, #a32e24 35%, #1c3d32);
+  --chip: #2a4a3e;
+  --destructive-subtle: color-mix(in oklch, #e07a72 20%, transparent);
+  --success: #8fbfa8;
+  --success-subtle: color-mix(in oklch, #8fbfa8 20%, transparent);
+  --warning: #e0b070;
+  --warning-subtle: color-mix(in oklch, #e0b070 20%, transparent);
+  --info: #9ec4b4;
+  --info-subtle: color-mix(in oklch, #9ec4b4 20%, transparent);
+  --sticker-edge: #fffdf8;
+  --sticker-ink: #1c3d32;
+  --sticker-shadow: color-mix(in oklch, black 30%, transparent);
+  --destructive-icon: var(--destructive);
+  --success-icon: var(--success);
+  --warning-icon: var(--warning);
+  --info-icon: var(--info);
 }
 
 @theme inline {
@@ -20,8 +56,23 @@
   --color-card: var(--card);
   --color-accent: var(--accent);
   --color-ring: var(--ring);
+  --color-highlight: var(--highlight);
+  --color-chip: var(--chip);
+  --color-destructive: var(--destructive);
+  --color-destructive-subtle: var(--destructive-subtle);
+  --color-success: var(--success);
+  --color-success-subtle: var(--success-subtle);
+  --color-warning: var(--warning);
+  --color-warning-subtle: var(--warning-subtle);
+  --color-info: var(--info);
+  --color-info-subtle: var(--info-subtle);
+  --color-sticker-edge: var(--sticker-edge);
+  --color-sticker-ink: var(--sticker-ink);
+  --color-sticker-shadow: var(--sticker-shadow);
   --font-sans: var(--font-body), "Iowan Old Style", Palatino, serif;
   --font-display: var(--font-heading), "Iowan Old Style", Palatino, serif;
+  --font-hero: "Inter Display", Inter, "SF Pro Display", "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+  --font-script: "Segoe Script", "Bradley Hand", "Snell Roundhand", "Brush Script MT", cursive;
   --animate-fade-in: fade-in 0.3s ease both;
 }
 

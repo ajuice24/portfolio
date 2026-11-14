@@ -368,11 +368,11 @@ export function CoverflowCarousel({
           key={selected}
           className="mt-2 flex animate-fade-in flex-col items-center px-6"
         >
-          <p className="font-display text-3xl leading-tight tracking-tight text-foreground md:text-4xl">
+          <p className="font-hero text-3xl font-black leading-[0.92] tracking-[-0.045em] text-foreground md:text-4xl">
             {active.title}
           </p>
           {active.subtitle && (
-            <p className="mt-3 max-w-md text-center leading-relaxed text-muted-foreground">
+            <p className="mt-3 max-w-md text-center font-script text-xl leading-snug text-foreground md:text-2xl">
               {active.subtitle}
             </p>
           )}

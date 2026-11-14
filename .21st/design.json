@@ -23,6 +23,12 @@
       "choice": "The forest hero, moss path, plants, and tree dock are gone. The first screen is the animator title card: Mohamed Ajmal Ahmed, with Full-stack developer written above it. The side rail and oat sections return underneath.",
       "type": "Title card uses the component display face; the page keeps Cormorant and Baskerville",
       "ratio": "Full-viewport paper title card, then the oat page"
+    },
+    {
+      "date": "2026-11-15",
+      "choice": "A short about statement sits on the oat ground between the title card and the career coverflow. Hand-drawn marks and paper chips pick out the words, in forest ink with a tomato highlight.",
+      "type": "Cormorant for the statement, Baskerville for the sections below",
+      "ratio": "Oat page, forest ink, tomato only on the highlight"
     }
   ]
 }

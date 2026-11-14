@@ -2,6 +2,7 @@ import { Awards } from "@/components/awards";
 import { CareerPath } from "@/components/career-path";
 import { EducationTimeline } from "@/components/education-timeline";
 import { Hero } from "@/components/hero";
+import { Intro } from "@/components/intro";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteNav } from "@/components/site-nav";
 import { Skills } from "@/components/skills";
@@ -19,6 +20,7 @@ export default function Home() {
       <SiteNav />
       <main id="content">
         <Hero />
+        <Intro />
         <CareerPath />
         <WorkSection />
         <EducationTimeline />
