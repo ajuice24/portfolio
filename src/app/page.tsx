@@ -3,7 +3,7 @@ import { CareerPath } from "@/components/career-path";
 import { EducationTimeline } from "@/components/education-timeline";
 import { Hero } from "@/components/hero";
 import { SiteFooter } from "@/components/site-footer";
-import { SiteHeader } from "@/components/site-header";
+import { SiteNav } from "@/components/site-nav";
 import { Skills } from "@/components/skills";
 import { WorkSection } from "@/components/work-section";
 
@@ -12,11 +12,11 @@ export default function Home() {
     <>
       <a
         href="#content"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:right-4 focus:z-[60] focus:bg-accent focus:px-4 focus:py-3 focus:text-sm focus:text-background"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:right-4 focus:z-[80] focus:bg-accent focus:px-4 focus:py-3 focus:text-sm focus:text-background"
       >
         Skip to content
       </a>
-      <SiteHeader />
+      <SiteNav />
       <main id="content">
         <Hero />
         <CareerPath />

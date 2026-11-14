@@ -2,8 +2,8 @@ import { awards } from "@/data/portfolio";
 
 export function Awards() {
   return (
-    <section id="awards" className="scroll-mt-6">
-      <div className="mx-auto w-full max-w-6xl py-16 pr-6 pl-[4.75rem] md:py-24 md:pr-10 md:pl-24">
+    <section id="awards">
+      <div className="mx-auto w-full max-w-6xl px-6 py-16 md:px-10 md:py-24">
         <h2 className="font-display text-4xl tracking-tight">Awards</h2>
         <ul className="mt-8 grid gap-4 md:grid-cols-3">
           {awards.map((award) => (

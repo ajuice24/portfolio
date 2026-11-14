@@ -3,7 +3,7 @@ import { profile } from "@/data/portfolio";
 export function SiteFooter() {
   return (
     <footer className="bg-foreground text-background">
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 py-12 pr-6 pl-[4.75rem] md:flex-row md:items-end md:justify-between md:py-16 md:pr-10 md:pl-24">
+      <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 px-6 py-12 md:flex-row md:items-end md:justify-between md:px-10 md:py-16">
         <div>
           <p className="font-display text-3xl tracking-tight">{profile.name}</p>
           <p className="mt-2 text-sm text-background/75">

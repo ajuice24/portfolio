@@ -5,6 +5,24 @@
       "choice": "Oat milk ground, forest green fields, tomato accent",
       "type": "Cormorant Garamond headings, Libre Baskerville body",
       "ratio": "60 oat, 30 forest, 10 tomato"
+    },
+    {
+      "date": "2026-11-10",
+      "choice": "Sylva Living Green is the hero only. The moss scene, Lexend, and liquid-metal controls stay as authored. Portfolio facts replace the conservation copy. Sections below keep the oat and serif page.",
+      "type": "Lexend inside the hero frame, Cormorant and Baskerville below",
+      "ratio": "Full-viewport olive hero, then the existing 60 oat, 30 forest, 10 tomato"
+    },
+    {
+      "date": "2026-11-10",
+      "choice": "The career section continues the hero's olive forest: a moss path, glass cards, and pale-green nodes. Lexend only inside that section. The dock from the hero is the sticky navigation, and the left rail is gone. Sections after the journey stay oat and serif.",
+      "type": "Lexend for the journey, Cormorant and Baskerville below it",
+      "ratio": "Forest journey between the olive hero and the oat page"
+    },
+    {
+      "date": "2026-11-14",
+      "choice": "The forest hero, moss path, plants, and tree dock are gone. The first screen is the animator title card: Mohamed Ajmal Ahmed, with Full-stack developer written above it. The side rail and oat sections return underneath.",
+      "type": "Title card uses the component display face; the page keeps Cormorant and Baskerville",
+      "ratio": "Full-viewport paper title card, then the oat page"
     }
   ]
 }

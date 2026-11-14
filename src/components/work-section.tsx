@@ -48,7 +48,7 @@ export function WorkSection() {
   }
 
   return (
-    <section id="work" className="scroll-mt-6 mx-auto w-full max-w-6xl py-20 pr-6 pl-[4.75rem] md:py-28 md:pr-10 md:pl-24">
+    <section id="work" className="mx-auto w-full max-w-6xl px-6 py-20 md:px-10 md:py-28">
       <h2 className="font-display text-4xl tracking-tight md:text-5xl">Selected work</h2>
       <ul className="mt-10 grid gap-4 md:grid-cols-2">
         {works.map((work) => (

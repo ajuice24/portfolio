@@ -1,28 +1,55 @@
+import { CoverflowCarousel, type CoverflowSlide } from "@/components/ui/coverflow-carousel";
 import { path } from "@/data/portfolio";
 
+const logos: Record<string, Pick<CoverflowSlide, "src" | "alt" | "imageClassName">> = {
+  Loopcraft: {
+    src: "/logos/loopcraft.svg",
+    alt: "Loopcraft logo",
+    imageClassName: "object-contain p-[8%]",
+  },
+  "SME Digital": {
+    src: "/logos/sme-digital.jpg",
+    alt: "SME Digital logo",
+  },
+  MindCo: {
+    src: "/logos/mindco.png",
+    alt: "MindCo logo",
+  },
+};
+
 export function CareerPath() {
+  const slides: CoverflowSlide[] = path.map((step) => {
+    const logo = logos[step.org];
+    return {
+      src: logo.src,
+      alt: logo.alt,
+      imageClassName: logo.imageClassName,
+      title: step.title,
+      subtitle: step.note,
+      meta: [
+        { label: "Company", value: step.org },
+        { label: "When", value: step.period },
+        ...(step.current ? [{ label: "Status", value: "Now" }] : []),
+      ],
+    };
+  });
+  const current = path.findIndex((step) => step.current);
+
   return (
-    <section id="path" className="scroll-mt-6 mx-auto w-full max-w-6xl py-20 pr-6 pl-[4.75rem] md:py-28 md:pr-10 md:pl-24">
+    <section id="path" className="mx-auto w-full max-w-6xl px-6 py-20 md:px-10 md:py-28">
       <h2 className="font-display text-4xl tracking-tight md:text-5xl">The path</h2>
-      <ol className="mt-10 grid gap-4 md:grid-cols-2">
-        {path.map((step) => (
-          <li key={step.org + step.period}>
-            <article
-              className={`flex h-full flex-col border bg-card p-6 ${
-                step.current ? "border-accent" : "border-foreground/20"
-              }`}
-            >
-              <div className="flex items-baseline justify-between gap-4">
-                <p className="text-sm text-muted-foreground">{step.period}</p>
-                {step.current ? <p className="text-sm text-accent">Now</p> : null}
-              </div>
-              <h3 className="mt-5 font-display text-3xl leading-tight tracking-tight">{step.title}</h3>
-              <p className="mt-2 text-base">{step.org}</p>
-              <p className="mt-4 leading-relaxed text-muted-foreground">{step.note}</p>
-            </article>
-          </li>
-        ))}
-      </ol>
+      <div className="mt-4">
+        <CoverflowCarousel
+          slides={slides}
+          initialIndex={current === -1 ? 0 : current}
+          showCaption
+          showNavigation
+          showPagination
+          label="Career path"
+          cardWidth="clamp(180px, 34vw, 300px)"
+          cardClassName="bg-card"
+        />
+      </div>
     </section>
   );
 }

@@ -36,6 +36,7 @@ export type Step = {
   title: string;
   org: string;
   note: string;
+  mark: string;
   current?: boolean;
 };
 
@@ -44,25 +45,29 @@ export const path: Step[] = [
     period: "Jan 2024 — Sep 2025",
     title: "Intern",
     org: "Loopcraft",
-    note: "The first stretch at Loopcraft, before the frontend role on the same studio’s projects.",
+    mark: "L",
+    note: "The first stretch at Loopcraft, learning the work on live projects.",
   },
   {
     period: "Feb 2025 — Jun 2026",
-    title: "Frontend developer",
+    title: "Frontend Developer",
     org: "Loopcraft",
-    note: "React, Next.js, TypeScript, and Tailwind across more than fifteen projects, with Payload for the content.",
+    mark: "L",
+    note: "React, Next.js, and Tailwind across more than fifteen projects, with Payload for the content.",
   },
   {
     period: "Jun 2026 — Aug 2026",
-    title: "Full-stack developer",
+    title: "Full Stack Developer",
     org: "SME Digital",
+    mark: "SME",
     note: "React Native and Expo for the product, with Strapi and PostgreSQL behind it.",
   },
   {
-    period: "Aug 2026 — present",
-    title: "Full-stack developer",
+    period: "Aug 2026 — Present",
+    title: "Full Stack Developer",
     org: "MindCo",
-    note: "Government sites and content systems. TanStack Start, Hono, PostgreSQL, Docker, and Payload.",
+    mark: "M",
+    note: "Government sites and content systems, with TanStack Start, Hono, and Payload.",
     current: true,
   },
 ];
