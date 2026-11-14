@@ -349,12 +349,32 @@ export default function Timeline({
       return timeline;
     };
 
-    const positions = revealPositions(items.length, window.innerWidth < 600);
+    const seenFirst = [
+      "mnu-start",
+      "loopcraft-intern",
+      "loopcraft-frontend",
+      "mnu-degree",
+      "sme-digital",
+      "mindco",
+    ];
+    const visualOrder = [
+      ...seenFirst
+        .map((id) => items.find((item) => item.id === id))
+        .filter((item): item is TimelineItem => Boolean(item)),
+      ...items.filter((item) => !seenFirst.includes(item.id)),
+    ];
+    const positions = revealPositions(visualOrder.length, window.innerWidth < 600);
 
-    items.forEach((item, index) => {
+    visualOrder.forEach((item, index) => {
       const pair = positions[index];
       if (!pair) return;
-      createItemTimeline(item, pair[0], pair[1]);
+      const windowForItem =
+        item.id === "mnu-degree"
+          ? ([34, 50] as const)
+          : item.id === "sme-digital"
+            ? ([46, 62] as const)
+            : pair;
+      createItemTimeline(item, windowForItem[0], windowForItem[1]);
     });
 
     const handleResize = () => {
@@ -423,7 +443,7 @@ export default function Timeline({
                 {topItems.map((item) => (
                   <div
                     key={`top-${item.id}`}
-                    className="relative h-full w-[34vw] shrink-0 px-[2vw] max-[600px]:flex max-[600px]:w-[78vw] max-[600px]:flex-col max-[600px]:px-[6vw]"
+                    className={`relative h-full w-[34vw] shrink-0 px-[2vw] max-[600px]:flex max-[600px]:w-[78vw] max-[600px]:flex-col max-[600px]:px-[6vw] ${item.id === "sme-digital" ? "ml-[22vw] max-[600px]:ml-[30vw]" : ""}`}
                   >
                     <div className="absolute top-0 left-0 h-full w-full">
                       <div
