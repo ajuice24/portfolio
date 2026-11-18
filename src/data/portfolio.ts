@@ -92,14 +92,40 @@ export const profile = {
 
 export const works: Work[] = [
   {
-    slug: "sahana",
-    title: "Sahana",
-    summary: "A platform for disaster and emergency response.",
+    slug: "ataraxis",
+    title: "Ataraxis",
+    summary: "A site for Ataraxis Grand & Spa — stays, diving, and tours in Fuvahmulah.",
     detail:
-      "Sahana is my final-year project at Maldives National University. It gives a response team one place to manage information, resources, and communication, with an interface built to stay fast when people are in a hurry.",
-    context: "Maldives National University",
-    period: "Feb 2025 — Present",
-    stack: ["React", "Laravel", "PostgreSQL", "Tailwind CSS"],
+      "Built at Loopcraft. The public site presents accommodation, diving, tour packages, and guest services, with Payload CMS so the team can update the pages themselves.",
+    context: "Loopcraft",
+    period: "Feb 2026 — May 2026",
+    stack: ["Next.js", "React", "Payload CMS"],
+    href: "https://www.ataraxisgrandandspa.com/",
+    image: "/assets/Ataraxis.jpg",
+  },
+  {
+    slug: "from-maldives",
+    title: "From Maldives",
+    summary: "A content-managed site for the Maldives fisheries sector.",
+    detail:
+      "Built at Loopcraft. The public site carries products and articles, and a Payload CMS lets the team publish without waiting on a developer.",
+    context: "Loopcraft",
+    period: "Aug 2025 — Sep 2025",
+    stack: ["Next.js", "React", "Payload CMS"],
+    href: "https://frommaldives.mv/",
+    image: "/assets/frommaldives.jpg",
+  },
+  {
+    slug: "igmh",
+    title: "IGMH",
+    summary: "A hospital website for services, doctors, and facilities.",
+    detail:
+      "A responsive site for IGMH, also at Loopcraft. Services, people, and facilities sit in a custom Payload CMS so the hospital can keep the pages current.",
+    context: "Loopcraft",
+    period: "Apr 2025 — Jun 2025",
+    stack: ["Next.js", "React", "Payload CMS"],
+    href: "https://www.igmh.gov.mv/",
+    image: "/assets/igmh.jpg",
   },
   {
     slug: "space-explorer",
@@ -111,26 +137,17 @@ export const works: Work[] = [
     period: "Aug 2025 — Oct 2025",
     stack: ["Next.js", "React", "TypeScript", "Three.js"],
     href: "https://space-explorerr.vercel.app/",
+    image: "/assets/spceexploer.jpg",
   },
   {
-    slug: "from-maldives",
-    title: "From Maldives",
-    summary: "A content-managed site for the Maldives fisheries sector.",
+    slug: "sahana",
+    title: "Sahana",
+    summary: "A platform for disaster and emergency response.",
     detail:
-      "Built at Loopcraft. The public site carries products and articles, and a Payload CMS lets the team publish without waiting on a developer.",
-    context: "Loopcraft",
-    period: "Aug 2025 — Sep 2025",
-    stack: ["Next.js", "React", "Payload CMS"],
-  },
-  {
-    slug: "igmh",
-    title: "IGMH",
-    summary: "A hospital website for services, doctors, and facilities.",
-    detail:
-      "A responsive site for IGMH, also at Loopcraft. Services, people, and facilities sit in a custom Payload CMS so the hospital can keep the pages current.",
-    context: "Loopcraft",
-    period: "Apr 2025 — Jun 2025",
-    stack: ["Next.js", "React", "Payload CMS"],
+      "Sahana is my final-year project at Maldives National University. It gives a response team one place to manage information, resources, and communication, with an interface built to stay fast when people are in a hurry.",
+    context: "Maldives National University",
+    period: "Feb 2025 — Present",
+    stack: ["React", "Laravel", "PostgreSQL", "Tailwind CSS"],
   },
   {
     slug: "storefront",
