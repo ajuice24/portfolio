@@ -35,6 +35,12 @@
       "choice": "The career path is a pinned horizontal timeline on the oat ground. The portrait leads, tomato marks the rail, and each stop carries the place mark beside the date.",
       "type": "Cormorant for the timeline titles, Baskerville for the notes",
       "ratio": "Oat field, forest type, tomato rail"
+    },
+    {
+      "date": "2026-11-19",
+      "choice": "Skills is a brick stack on the oat page. Each tool is its own width and color. The heading and group labels stay serif and forest; the brick faces use the hero sans.",
+      "type": "Cormorant section title, Inter on the bricks",
+      "ratio": "Oat field, colored bricks, yellow base"
     }
   ]
 }
